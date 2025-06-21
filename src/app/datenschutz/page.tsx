@@ -6,7 +6,7 @@ const Datenschutz = () => {
       <Heading>Datenschutzerklärung</Heading>
       <Text marginTop="1rem">Verantwortlich:</Text>
       <Text marginTop="1rem">Chris Weiß</Text>
-      <Text>Musterstraße 12</Text>
+      <Text>Musterstraße 12 (Postfach ist beauftragt)</Text>
       <Text>12345 Berlin</Text>
       <Text>E-Mail: info@zenpi.me</Text>
       <Text marginTop="1rem">
