@@ -1,95 +1,88 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Box, Heading, Mark, Text } from "@chakra-ui/react";
+import { Apple, BatteryCharging, Heart, TrendingUp } from "@deemlol/next-icons";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <Heading>Bring dein Leben in Balance</Heading>
+      <Text marginTop="0.5rem">
+        Ich möchte hier einen kleinen Überblick geben, mit welchen Methoden ich
+        arbeite. Das Ganze ist ein Hobby von mir. Ich mache es aus Interesse an
+        der Sache –<Mark fontWeight="bold"> ohne Bezahlung</Mark>.
+      </Text>
+      <Text marginTop="0.5rem">
+        Mein Ziel ist, dass es dir besser geht. Gesünder, klarer, vielleicht
+        auch zufriedener. Kleine Fortschritte sind schon sehr viel wert – sie
+        wirken oft in andere Lebensbereiche hinein. Manchmal merkt man erst im
+        Rückblick, wie viel sich verändert hat.
+      </Text>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Heading marginTop="2rem">Grundpfeiler</Heading>
+      <Box padding="1rem 0" display="flex" flexDirection="row" gap="1rem">
+        <Box width="50px">
+          <Apple size={50} color="var(--chakra-colors-orange-500)" />
+        </Box>
+        <Box>
+          <Heading size="md">Essen</Heading>
+          <Text>
+            Viele wissen grundsätzlich, was gut für sie wäre – aber es fällt
+            schwer, das dauerhaft umzusetzen.
+          </Text>
+          <Text>
+            Ich möchte helfen, realistische Wege zu finden. Zusammen mit den
+            anderen drei Bereichen wird vieles einfacher.
+          </Text>
+        </Box>
+      </Box>
+      <Box padding="1rem 0" display="flex" flexDirection="row" gap="1rem">
+        <Box width="50px">
+          <TrendingUp size={50} color="var(--chakra-colors-orange-500)" />
+        </Box>
+        <Box>
+          <Heading size="md">Sport</Heading>
+          <Text>
+            Wir schauen, wo du gerade stehst. Schon ein paar einfache Übungen
+            pro Woche können viel verändern.
+          </Text>
+          <Text>
+            Wenn du möchtest, probieren wir zusätzlich Atemtechniken aus, die
+            entspannen oder Energie geben können.
+          </Text>
+        </Box>
+      </Box>
+      <Box padding="1rem 0" display="flex" flexDirection="row" gap="1rem">
+        <Box width="50px">
+          <BatteryCharging size={50} color="var(--chakra-colors-orange-500)" />
+        </Box>
+        <Box>
+          <Heading size="md">Schlaf</Heading>
+          <Text>
+            Guter Schlaf ist oft unterschätzt. Dabei hängt sehr viel davon ab:
+            Energie, Stimmung, sogar Motivation.
+          </Text>
+          <Text>
+            Wir versuchen gemeinsam herauszufinden, was du verändern kannst –
+            ohne Druck, aber mit Wirkung.
+          </Text>
+        </Box>
+      </Box>
+      <Box padding="1rem 0" display="flex" flexDirection="row" gap="1rem">
+        <Box width="50px">
+          <Heart size={50} color="var(--chakra-colors-orange-500)" />
+        </Box>
+        <Box>
+          <Heading size="md">Geist</Heading>
+          <Text>Dieser Bereich ist sehr individuell.</Text>
+          <Text>
+            Mit einfachen Meditationstechniken und Gesprächen können wir
+            schauen, was dich beschäftigt und wie du mehr Klarheit gewinnst.
+          </Text>
+          <Text>
+            Es geht nicht darum, „besser zu denken“, sondern vielleicht darum,
+            sich selbst ein Stück besser zu verstehen.
+          </Text>
+        </Box>
+      </Box>
     </div>
   );
 }

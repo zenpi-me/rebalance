@@ -1,0 +1,19 @@
+.footer {
+  background-color: "transparent";
+  padding: 0.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.footerContainer {
+  max-width: var(--chakra-sizes-2xl);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
